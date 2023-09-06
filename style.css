@@ -1,4 +1,6 @@
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -10,7 +12,16 @@ header {
     text-align: center;
     color:wheat;
     font-size: 70px;
-    font-family: Constantia, 'Times New Roman', Times, serif ;   
+    font-family: Constantia, 'Times New Roman', Times, serif ; 
+}
+.footer {
+    height: 20px;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
 }
 .headerbild {
     width: 100%;
@@ -30,25 +41,26 @@ header {
 .column {
     width: 100%;
     float: left;
-    padding: 10px;
+    padding:10px;
 }
 .column.left {
     width: 20%;
-    background-color: aliceblue;
+    background-color: rgb(240, 237, 216);
     font-size: 22px;
     border-radius: 5%;
 }
 .column.right {
-   width: 80%;
- text-align: center;
-
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 7%;
 }
 .column::after {
     content: "";
     display: table;
     clear: both;
   }
-#profil {
+#profilbild {
     position: relative;
     left: 13%;
     border-radius: 50%;
@@ -59,4 +71,47 @@ header {
 }
 .kontaktinfo {
     word-spacing: 0.5em;
+    border-bottom-style: solid;
+    border-color: lightslategray
+}
+h1{
+    font-size: 33px;
+    font-weight: lighter;
+}
+.profil{
+    border-bottom-style:solid;
+    border-color: lightslategray;
+    margin: 0%;
+}
+.inforubrik{
+    border-bottom-style: solid;
+    border-color: lightslategray;
+}
+.intressen{
+    max-width: 130px;
+    text-align: center;
+    float:left;
+    margin-right: 80px;
+    text-decoration: underline;
+}
+.icon{
+    position: absolute;
+    transform: translate(-48%, -25%);
+}
+.linkhead{
+    font-size: 40px;
+    font-weight: lighter;
+    border-color: lightslategray;
+    position: absolute;
+    transform: translate(0%, 100%);
+    margin: 0%;
+    max-height: fit-content;
+}
+.link{
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.fottext{
+  font-weight: bolder;
 }
